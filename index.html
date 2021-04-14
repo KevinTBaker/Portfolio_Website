@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>Kevin Baker portfolio website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+height: 100%;
+	font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+	background-position: center;
+	background-size: cover;
+	min-height: 75%;
+}
+
+.Poems {
+	display: grid;
+	 grid-template-columns: repeat(3, 1fr);
+	 grid-auto-rows: minmax(100px, auto);
+}
+.about-section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minimax(100px, auto);
+}
+.about-content {
+	text-align: center;
+}
+.Poem_content {
+	text-align: center;
+}
+
+.Poem_title {
+	font-weight: 900;
+	text-align: center;
+	text-size: 100px;
+}
+
+.body {
+	background-color: blue;
+}
+.menu {
+display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+	<div class="w3-row w3-padding w3-black">
+		<div class="w3-col s3">
+			<a href="#" class="w3-button w3-block w3-black">HOME</a>
+		</div>
+		<div class="w3-col s3">
+			<a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+		</div>
+		<div class="w3-col s3">
+			<a href="#menu" class="w3-button w3-block w3-black">PROJECTS</a>
+		</div>
+		<div class="w3-col s3">
+			<a href="#where" class="w3-button w3-block w3-black">POEMS</a>
+		</div>
+	</div>
+</div>
+
+<!-- Header with image -->
+<div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+</div>
+	<div class="w3-display-middle w3-center">
+		<span class="w3-text-white" style="font-size:90px">Welcome<br></span>
+</div>
+	<img src="kbboat.jpg" alt="me on a boat" height="1150" width="100%"> 
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<!-- About Container -->
+<div class="w3-container" id="about">
+	<div class="w3-content" style="max-width:700px">
+		<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+	</div>
+</div>
+<div class="about-section">	
+	<p class="about-content">Hi, my name's Kevin Baker I am a creative, and passionate Computer Science student at Santa Monica College. I was born in a small town in Hungary called Cegléd. We moved to the United States when I was two years old. I'd visit Hungary for the summer from the age of 7 till 12. At 12 years old I loved my little country so much that I stayed for 2 years and finished midddle school there. I consider myself a life-long learner and love to creating there's always something new I get interested in and adopt to my identity. Currently I write poetry, write and play music, surf, and take flight lessons. The poetry I write is mostly little epiphanies or teachings I have for my future self or for anyone interested. I like to call them  Cosmic Teachings for us Earthly Beings. </p>
+	<div class="picture_me_plane">
+		<div class="plane">
+			<img src="meflyin.jpeg" height="300" width="270" align="right">
+		</div>
+	</div>
+</div>
+
+<!-- Projects Container -->
+<div class="w3-container" id="menu">
+	<div class="w3-content" style="max-width:700px">
+
+	<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PROJECTS AND EXPERIENCE</span></h5>
+
+</div>
+<!-- Poem Section-->
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">POEMS</span></h5>
+<div class="Poems"id="poem">
+	<div class="Poem_one"id="poem1">
+		<p class="Poem_title">The Traveller</p>
+		<p class="Poem_content">Travelling the world<br>My purpose I don't know<br>In search of a new home<br>All along he's been living in one<br>Between his bone<br>On his journey<br>He'll meet other travellers<br>Some letting them into theirs <br> And sharing moments <br>Building astral monuments <br>That can be seen from space <br>The lesson <br> To be present <br>Not have expectations<br>To be authentic<br>For we are all travellers <br>With a backpack<br>Looking for a home</p>
+	</div>
+	<div class="Poem_two"id=poem2>
+		<p class="Poem_title">Creatures</p>
+		<p class="Poem_content">White skeletal creatures
+		all the same<br>
+		Their flesh giving them their name<br>
+		Frollicking dancing under the sun<br>
+		Because it's all about having fun<br>
+		Don't live in your head<br>
+		For you are here now<br>
+		You'll be grateful when dead</p>	
+	</div>
+	<div class="Poem_three"id=poem3>
+		<p class="Poem_title">Birth</p>
+		<p class="Poem_content">
+		Welcome to the plane of existence<br>
+		You will learn, fall in love, and hopefully live<br>
+		Don't get too attached<br>
+		To things that don't matter<br>
+		Like shoes and social status<br>
+		Learn to get yourself and others forward<br>
+		Love for the sole purpose of living again<br>
+		And Live for the experience<br>
+		Now go on your time has come<br>
+		Be careful don't forget what I told you<br>
+		<br>
+		Four men all wearing white welcome you<br>
+		In a hopefully sterile place<br>
+		You greet them<br>
+		With a cry<br>
+		Your button black eyes fresh<br>
+		Barely opened<br>
+		Where am I?<br>
+		It's your beginning<br>
+		Remember what I taught you<br>
+		Your future is in your hands</p>
+	</div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+	var i, x, tablinks;
+	x = document.getElementsByClassName("menu");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < x.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+	}
+	document.getElementById(menuName).style.display = "block";
+	evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
