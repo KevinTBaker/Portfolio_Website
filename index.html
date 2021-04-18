@@ -8,11 +8,15 @@
 <style>
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 body, html {
 height: 100%;
 	font-family: "Courier", sans-serif;
 }
 
+.fonts {
+	font-family: "Courier", sans-serif;
+}
 .footer-social-icons {
 	width: 350px;
 	display:block;
@@ -22,14 +26,19 @@ height: 100%;
 .social-icon {
 	color: #fff;
 }
+
 ul.social-icons {
 	margin-top: 10px;
 }
+
 .social-icons li {
 	vertical-align: top;
 	display: inline;
 	height: 100px;
+	list-style: inside;
+	float: center;
 }
+
 .social-icons a {
 	color: #fff;
 	text-decoration: none;
@@ -44,9 +53,15 @@ ul.social-icons {
 	transition: .5s;
 	background-color: #322f30;
 }
+
 .fa-linkedin:hover {
 	background-color: #0073a4;
 }
+
+.about-title {
+	background: #FAE8E0;
+}
+
 .fa-github {
 	padding:10px 14px;
 	-o-transition:.5s;
@@ -55,6 +70,9 @@ ul.social-icons {
 	-webkit-transition:.5s;
 	transition: .5s;
 	background-color: #322f30;
+}
+.poem_section_title {
+	background-color: lightblue;
 }
 .fa-github:hover {
 	    background-color: #5a32a3;
@@ -72,14 +90,17 @@ ul.social-icons {
 	 grid-auto-rows: minmax(100px, auto);
 	background: lightblue;
 }
+
 .about-section {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: minimax(100px, auto);
-	background: salmon
+	background: #FAE8E0;
 }
+
 .about-content {
 	text-align: center;
+	font-size: 17px; 
 }
 
 .Poem_content {
@@ -97,6 +118,7 @@ ul.social-icons {
 	text-align: center;
 	font-size: 18px;
 }
+
 .Poem_title {
 	font-weight: 900;
 	text-align: center;
@@ -104,7 +126,7 @@ ul.social-icons {
 }
 
 .menu {
-display: none;
+	display: none;
 }
 </style>
 <body>
@@ -138,14 +160,59 @@ display: none;
 
 <!-- Add a background color and large text to the whole page -->
 <!-- About Container -->
-<div class="w3-container" id="about">
+<div class="w3-container about-title" id="about">
 	<div class="w3-content" style="max-width:700px">
 		<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
 	</div>
 </div>
 <div class="about-section">
 	<br>
-	<p class="about-content">Hi, my name's Kevin Baker I am a creative, and passionate Computer Science student at Santa Monica College. I was born in a small town in Hungary called Cegléd. We moved to the United States when I was two years old. I'd visit Hungary for the summer from the age of 7 till 12. At 12 years old I loved my little country so much that I stayed for 2 years and finished midddle school there. I consider myself a life-long learner and love to creating there's always something new I get interested in and adopt to my identity. Currently I write poetry, write and play music, surf, and take flight lessons. The poetry I write is mostly little epiphanies or teachings I have for my future self or for anyone interested. I like to call them  Cosmic Teachings for us Earthly Beings. </p>
+	<p class="about-content">
+	
+	To be learning is to be living.
+	<br>
+	<br>
+	My decisions are largely driven by my insatiable curiosity and it’s led me to
+	experiences of unfamiliarity and novelty. The kind of situations where you either	
+	learn to swim or you’ll sink.
+	<br>
+	<br>
+	My passion is to create solutions as well as art to impact lives.
+	<br>
+	<br>
+	I am a creative, passionate, and compassionate Computer Science student at Santa Monica College.
+	<br>
+	<br>
+	I am multi-cultural, bilingual.
+	<br>
+	Half African American and half Hungarian
+	<br>
+	<br>
+	I was born in a small town in Hungary. We moved to the United States when I was
+	two years old. I'd visit my maternal grandparents in Hungary for the summer from
+	the age of 7 till 12.
+	I loved Hungary so much that I stayed for 2 years and went to Middle school there.
+	<br>
+	<br>
+	I write poetry.	
+	<br>
+	The poetry I write is mostly little epiphanies or teachings for anyone interested.
+	I like to call them cosmic teachings for earthly beings.
+	<br>
+	<br>
+	I am a reader.
+	<br>
+	<br>
+	I play and write music (banjo and guitar).
+	<br>
+	<br>
+	I was on the varsity swim and water polo teams, and a member of school's Symphonic Orchestra throughout my high school years at
+	Santa Monica High School.
+	Now I surf whenever I have free time
+	and take flight lessons.
+	<br>
+	<br>
+	Please see my professional projects and experiences below.</p>
 	<div class="picture_me_plane">
 		<div class="plane">
 			<img src="meflyin.jpeg" height="300" width="300" align="right">
@@ -163,62 +230,64 @@ display: none;
 		<img src="Me_and_foamie.jpeg" height="300" width="300" align="left">
 	</div>
 	<div class="projects-content">
-		<p class="project-title">42 Silicon Valley</p>
+		<p class="project-title">42 Silicon Valley (Feb 2018 - Feb 2020)</p>
 		<p class="project-content">-Recreated C Standard Library<br>-Recreated Printf<br>-Created an algorithm that when given a set of Tetriminos will rearrange them and make them into the smallest square <br> </p>
-		<p class="project-title">Code For Fun</p>
+		<p class="project-title">Code For Fun (Jun 2018 - Jan 2019)</p>
 		<p class="project-content">-Lead Mentor<br>-Taught intro to Python course to highschool students<br>-Currated intro to Python curriculum<br>-Managed team of mentors</p>
-		<p class="project-title">Santa Monica College</p>
+		<p class="project-title">Santa Monica College(Feb 2020 - Current)</p>
 		<p class="project-content">-Built text-based Cryptocurrency Exchange<br>-Recreated Conway's Game of Life.<br>-Created horse race simulator with betting system</p>"
 
 	</div>
 </div>
 <!-- Poem Section-->
-<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">POEMS</span></h5>
-<div class="Poems"id="poem">
-	<div class="Poem_section"id="poem1">
-		<p class="Poem_title">The Traveller</p>
-		<p class="Poem_content">Travelling the world<br>My purpose I don't know<br>In search of a new home<br>All along he's been living in one<br>Between his bone<br>On his journey<br>He'll meet other travellers<br>Some letting them into theirs <br> And sharing moments <br>Building astral monuments <br>That can be seen from space <br>The lesson <br> To be present <br>Not have expectations<br>To be authentic<br>For we are all travellers <br>With a backpack<br>Looking for a home</p>
-	</div>
-	<div class="Poem_section" id=poem2>
-		<p class="Poem_title">Creatures</p>
-		<p class="Poem_content">White skeletal creatures
-		all the same<br>
-		Their flesh giving them their name<br>
-		Frollicking dancing under the sun<br>
-		Because it's all about having fun<br>
-		Don't live in your head<br>
-		For you are here now<br>
-		You'll be grateful when dead</p>	
-	</div>
-	<div class="Poem_section" id=poem3>
-		<p class="Poem_title">Birth</p>
-		<p class="Poem_content">
-		Welcome to the plane of existence<br>
-		You will learn, fall in love, and hopefully live<br>
-		Don't get too attached<br>
-		To things that don't matter<br>
-		Like shoes and social status<br>
-		Learn to get yourself and others forward<br>
-		Love for the sole purpose of living again<br>
-		And Live for the experience<br>
-		Now go on your time has come<br>
-		Be careful don't forget what I told you<br>
-		<br>
-		Four men all wearing white welcome you<br>
-		In a hopefully sterile place<br>
-		You greet them<br>
-		With a cry<br>
-		Your button black eyes fresh<br>
-		Barely opened<br>
-		Where am I?<br>
-		It's your beginning<br>
-		Remember what I taught you<br>
-		Your future is in your hands</p>
+<div class="poem_section_title">
+	<h5 class="w3-center w3-padding-64 poem_section_title"><span class="w3-tag w3-wide">POEMS</span></h5>
+	<div class="Poems poem_section_title" id="poem">
+		<div class="Poem_section"id="poem1">
+			<p class="Poem_title">The Traveller</p>
+			<p class="Poem_content">Travelling the world<br>My purpose I don't know<br>In search of a new home<br>All along he's been living in one<br>Between his bone<br>On his journey<br>He'll meet other travellers<br>Some letting them into theirs <br> And sharing moments <br>Building astral monuments <br>That can be seen from space <br>The lesson <br> To be present <br>Not have expectations<br>To be authentic<br>For we are all travellers <br>With a backpack<br>Looking for a home</p>
+		</div>
+		<div class="Poem_section" id=poem2>
+			<p class="Poem_title">Creatures</p>
+			<p class="Poem_content">White skeletal creatures
+			all the same<br>
+			Their flesh giving them their name<br>
+			Frollicking dancing under the sun<br>
+			Because it's all about having fun<br>
+			Don't live in your head<br>
+			For you are here now<br>
+			You'll be grateful when dead</p>	
+		</div>
+		<div class="Poem_section" id=poem3>
+			<p class="Poem_title">Birth</p>
+			<p class="Poem_content">
+			Welcome to the plane of existence<br>
+			You will learn, fall in love, and hopefully live<br>
+			Don't get too attached<br>
+			To things that don't matter<br>
+			Like shoes and social status<br>
+			Learn to get yourself and others forward<br>
+			Love for the sole purpose of living again<br>
+			And Live for the experience<br>
+			Now go on your time has come<br>
+			Be careful don't forget what I told you<br>
+			<br>
+			Four men all wearing white welcome you<br>
+			In a hopefully sterile place<br>
+			You greet them<br>
+			With a cry<br>
+			Your button black eyes fresh<br>
+			Barely opened<br>
+			Where am I?<br>
+			It's your beginning<br>
+			Remember what I taught you<br>
+			Your future is in your hands</p>
+		</div>
 	</div>
 </div>
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">CONTACT ME</span></h5>
+<h4 class="w3-center w3-padding-65 fonts">Let's Connect <br> Phone: 310.880.3913 <br> email: kenovics@gmail.com</h4>
 	<div class="w3-center footer-social-icons">
 		<ul class="social-icons w3-center">
 		        <li><a href="https://www.linkedin.com/in/kevintiborbaker/" class="social-icon"><i 
