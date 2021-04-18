@@ -6,10 +6,58 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 body, html {
 height: 100%;
 	font-family: "Courier", sans-serif;
-	background: aquamarine;
+}
+
+.footer-social-icons {
+	width: 350px;
+	display:block;
+	margin: 0 auto;
+}
+
+.social-icon {
+	color: #fff;
+}
+ul.social-icons {
+	margin-top: 10px;
+}
+.social-icons li {
+	vertical-align: top;
+	display: inline;
+	height: 100px;
+}
+.social-icons a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.fa-linkedin {
+	padding:10px 14px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition: .5s;
+	background-color: #322f30;
+}
+.fa-linkedin:hover {
+	background-color: #0073a4;
+}
+.fa-github {
+	padding:10px 14px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition: .5s;
+	background-color: #322f30;
+}
+.fa-github:hover {
+	    background-color: #5a32a3;
 }
 
 .bgimg {
@@ -22,18 +70,20 @@ height: 100%;
 	display: grid;
 	 grid-template-columns: repeat(3, 1fr);
 	 grid-auto-rows: minmax(100px, auto);
+	background: lightblue;
 }
 .about-section {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: minimax(100px, auto);
+	background: salmon
 }
 .about-content {
 	text-align: center;
 }
+
 .Poem_content {
 	text-align: center;
-
 }
 
 .projects-section {
@@ -129,7 +179,7 @@ display: none;
 		<p class="Poem_title">The Traveller</p>
 		<p class="Poem_content">Travelling the world<br>My purpose I don't know<br>In search of a new home<br>All along he's been living in one<br>Between his bone<br>On his journey<br>He'll meet other travellers<br>Some letting them into theirs <br> And sharing moments <br>Building astral monuments <br>That can be seen from space <br>The lesson <br> To be present <br>Not have expectations<br>To be authentic<br>For we are all travellers <br>With a backpack<br>Looking for a home</p>
 	</div>
-	<div class="Poem_section"id=poem2>
+	<div class="Poem_section" id=poem2>
 		<p class="Poem_title">Creatures</p>
 		<p class="Poem_content">White skeletal creatures
 		all the same<br>
@@ -140,7 +190,7 @@ display: none;
 		For you are here now<br>
 		You'll be grateful when dead</p>	
 	</div>
-	<div class="Poem_section"id=poem3>
+	<div class="Poem_section" id=poem3>
 		<p class="Poem_title">Birth</p>
 		<p class="Poem_content">
 		Welcome to the plane of existence<br>
@@ -168,6 +218,15 @@ display: none;
 </div>
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">CONTACT ME</span></h5>
+	<div class="w3-center footer-social-icons">
+		<ul class="social-icons w3-center">
+		        <li><a href="https://www.linkedin.com/in/kevintiborbaker/" class="social-icon"><i 
+			class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/KevinTBaker" class="social-icon"><i
+			class="fa fa-github"></i></a></li>
+		</ul>
+	</div>
 </footer>
 
 <script>
